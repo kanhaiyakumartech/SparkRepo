@@ -6,9 +6,9 @@ class TestUtils(unittest.TestCase):
 
     def setUp(self):
         self.spark = SparkSession.builder.appName("UnitTest").getOrCreate()
-        self.transactions_df = self.spark.createDataFrame([(1, "A", 101, 10.0, "Desc1"),
-                                                           (2, "B", 102, 20.0, "Desc2"),
-                                                           (3, "A", 101, 15.0, "Desc1")],
+        self.transactions_df = self.spark.createDataFrame([(1, "Kanhaiya", 101, 10.0, "Desc1"),
+                                                           (2, "satyam", 102, 20.0, "Desc2"),
+                                                           (3, "rajan", 101, 15.0, "Desc1")],
                                                           ["transaction_id", "product_id", "userid", "price", "product_description"])
 
     def test_find_unique_locations(self):
