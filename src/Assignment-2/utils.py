@@ -55,3 +55,4 @@ def find_most_active_hours(df_torrent):
 def find_most_active_repository(df_torrent):
     active_repo = df_torrent.filter(col("repository_clients") == " ghtorrent.rb")
     return active_repo
+    
