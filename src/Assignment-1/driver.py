@@ -1,7 +1,6 @@
 from pyspark.sql import SparkSession
 from utils import find_unique_locations, find_products_by_user, total_spending_by_user_product
 
-
 def main():
     spark = SparkSession.builder.appName("SparkAssignment").getOrCreate()
 
