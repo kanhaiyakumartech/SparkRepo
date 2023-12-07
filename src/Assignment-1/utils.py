@@ -11,3 +11,4 @@ def find_products_by_user(transactions_df):
 def total_spending_by_user_product(transactions_df):
     # Total spending done by each user on each product
     return transactions_df.groupBy("userid", "product_id").agg(F.sum("price").alias("total_spending"))
+
