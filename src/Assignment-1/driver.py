@@ -5,8 +5,8 @@ def main():
     spark = SparkSession.builder.appName("SparkAssignment").getOrCreate()
 
     # Here i Upload path of csv file
-    users_df = spark.read.csv("E:\Spark_Assignment-1/user.csv", header=True, inferSchema=True)
-    transactions_df = spark.read.csv("E:\Spark_Assignment-1/transaction.csv", header=True, inferSchema=True)
+    users_df = spark.read.csv("E:/Spark_Assignment-1/Resource/user.csv", header=True, inferSchema=True)
+    transactions_df = spark.read.csv("E:/Spark_Assignment-1/Resource/transaction.csv", header=True, inferSchema=True)
 
     # Now we have to  Count of unique locations where each product is sold
 
